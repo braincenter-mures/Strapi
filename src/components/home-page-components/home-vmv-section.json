@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_components_home_vmv_sections",
+  "info": {
+    "displayName": "HomeVMVSection",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section-heading.section-heading"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vision-mission-values.vmv-card"
+    }
+  }
+}

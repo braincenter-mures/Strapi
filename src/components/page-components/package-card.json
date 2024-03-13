@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_page_components_package_cards",
+  "info": {
+    "displayName": "PackageCard",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.feature-line"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.menu-button"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_page_components_choose_us_cards",
+  "info": {
+    "displayName": "ChooseUsCard",
+    "icon": "cast",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "dark"
+      ]
+    }
+  }
+}

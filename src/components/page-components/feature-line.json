@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_components_feature_lines",
+  "info": {
+    "displayName": "FeatureLine",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

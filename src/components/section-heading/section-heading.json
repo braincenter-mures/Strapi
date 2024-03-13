@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_section_heading_section_headings",
+  "info": {
+    "displayName": "Section Heading",
+    "icon": "hashtag"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "lead": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

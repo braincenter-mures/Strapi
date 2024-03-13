@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "cookie_policy_pages",
+  "info": {
+    "singularName": "cookie-policy-page",
+    "pluralName": "cookie-policy-pages",
+    "displayName": "CookiePolicyPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "section-heading.section-heading"
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "pricing_pages",
+  "info": {
+    "singularName": "pricing-page",
+    "pluralName": "pricing-pages",
+    "displayName": "PricingPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "pageContent": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "section-heading.section-heading",
+        "page-components.home-packages-section",
+        "page-components.contact-section",
+        "page-components.accordion-section"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo"
+    }
+  }
+}

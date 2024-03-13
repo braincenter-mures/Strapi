@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_page_components_home_headers",
+  "info": {
+    "displayName": "HomeHeader",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "SectionHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section-heading.section-heading"
+    },
+    "featuredText": {
+      "type": "string"
+    },
+    "lead": {
+      "type": "text"
+    },
+    "CtaSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu-button"
+    }
+  }
+}

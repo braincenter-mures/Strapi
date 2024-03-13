@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_page_components_home_choose_us_sections",
+  "info": {
+    "displayName": "HomeChooseUsSection",
+    "icon": "layout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "chooseus": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section-heading.section-heading"
+    },
+    "ctaSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu-button"
+    },
+    "cards": {
+      "displayName": "ChooseUsCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.choose-us-card"
+    }
+  }
+}

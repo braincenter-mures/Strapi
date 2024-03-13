@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_page_components_home_packages_sections",
+  "info": {
+    "displayName": "HomePackagesSection",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section-heading.section-heading"
+    }
+  }
+}

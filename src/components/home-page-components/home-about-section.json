@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_page_components_home_about_sections",
+  "info": {
+    "displayName": "HomeAboutSection",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SectionHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section-heading.section-heading"
+    },
+    "aboutHeading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section-heading.section-heading"
+    },
+    "FeatureLine": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.feature-line"
+    },
+    "CtaSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.menu-button"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

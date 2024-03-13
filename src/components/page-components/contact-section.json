@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_page_components_contact_sections",
+  "info": {
+    "displayName": "ContactSection",
+    "icon": "envelop"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section-heading.section-heading"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.menu-button"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.feature-line"
+    }
+  }
+}

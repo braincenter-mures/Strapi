@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_page_components_tech_cards",
+  "info": {
+    "displayName": "TechCard",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.feature-line"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

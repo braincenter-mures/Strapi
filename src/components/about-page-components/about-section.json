@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_about_page_components_about_sections",
+  "info": {
+    "displayName": "AboutSection",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "SectionContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section-heading.section-heading"
+    },
+    "CtaSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "menu.menu-button"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

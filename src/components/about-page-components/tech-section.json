@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_about_page_components_tech_sections",
+  "info": {
+    "displayName": "TechSection",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section-heading.section-heading"
+    },
+    "cards": {
+      "displayName": "TechCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.tech-card"
+    }
+  }
+}

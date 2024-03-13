@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_components_nf_technology_sections",
+  "info": {
+    "displayName": "NFTechnologySection",
+    "icon": "manyToMany",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section-heading.section-heading"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.nf-technology-card"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_components_accordion_sections",
+  "info": {
+    "displayName": "AccordionSection",
+    "icon": "server"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "section-heading.section-heading"
+    },
+    "accordion": {
+      "displayName": "AccordionCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.accordion-card"
+    }
+  }
+}

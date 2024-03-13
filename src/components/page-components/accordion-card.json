@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_page_components_accordion_cards",
+  "info": {
+    "displayName": "AccordionCard",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "featuredText": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

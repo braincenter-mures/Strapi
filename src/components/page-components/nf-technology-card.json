@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_page_components_nf_technology_cards",
+  "info": {
+    "displayName": "NFTechnologyCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
