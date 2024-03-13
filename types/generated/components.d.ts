@@ -314,12 +314,15 @@ export interface SectionHeadingSectionHeading extends Schema.Component {
   info: {
     displayName: 'Section Heading';
     icon: 'hashtag';
+    description: '';
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
     lead: Attribute.Text;
     subtitle: Attribute.String;
-    type: Attribute.String & Attribute.Required;
+    type: Attribute.Enumeration<
+      ['primary', 'secondary', 'tertiary', 'quaternary']
+    >;
   };
 }
 

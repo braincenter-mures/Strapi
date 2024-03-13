@@ -2,7 +2,8 @@
   "collectionName": "components_section_heading_section_headings",
   "info": {
     "displayName": "Section Heading",
-    "icon": "hashtag"
+    "icon": "hashtag",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,8 +18,13 @@
       "type": "string"
     },
     "type": {
-      "type": "string",
-      "required": true
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary",
+        "quaternary"
+      ]
     }
   }
 }
