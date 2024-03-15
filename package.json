@@ -2,7 +2,7 @@
   "name": "strapi",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Braincenter Admin Panel",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -26,7 +26,7 @@
     "styled-components": "^5.2.1"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Prisma Solutions"
   },
   "strapi": {
     "uuid": "35d7a084-3088-4d0b-869e-f503693ee8e5"
