@@ -4,23 +4,30 @@ module.exports = {
 
         try{
             await strapi.plugins['email-designer'].services.email.sendTemplatedEmail({
-                to: 'demenyador@gmail.com',
-                from: 'no-reply@braincenter.ro',
-            },
-            {
-                templateReferenceId: 1,
-                subject: `Thank you for your order`,
-            })
-            await strapi.plugins['email'].services.email.send({
                 to: result.email,
                 from: 'no-reply@braincenter.ro',
-                subject: 'Contact Form',
-                html: `${result.email}<br>${result.name}`,
             },
             {
                 templateReferenceId: 1,
-                subject: `Thank you for your order`,
+                subject: `Braincenter - Contact Form Submission`,
             })
+            await strapi.plugins["email"].services.email.send(
+              {
+                to: "demenyador@gmail.com",
+                from: "no-reply@braincenter.ro",
+                subject: "Contact Form",
+                html: `<h2>New Contact Form Submission</h2><br>
+                Name: ${result.name}<br>
+                Email Address: ${result.email}<br>
+                Phone Number: ${result.phone_number}<br>
+                ${result.message ? 'Message: ' + result.message : ''}<br>
+                ${result.type_of_contact || result.type_of_contact !== "contact" ? 'Application for: ' + result.type_of_contact : ''}`,
+              },
+              {
+                templateReferenceId: 1,
+                subject: `Thank you for your order`,
+              }
+            );
         } catch(err){
             console.log(err);
         }
