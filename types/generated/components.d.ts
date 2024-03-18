@@ -73,12 +73,14 @@ export interface HomePageComponentsHomeHeader extends Schema.Component {
   info: {
     displayName: 'HomeHeader';
     icon: 'alien';
+    description: '';
   };
   attributes: {
     SectionHeading: Attribute.Component<'section-heading.section-heading'>;
     featuredText: Attribute.String;
     lead: Attribute.Text;
     CtaSection: Attribute.Component<'menu.menu-button', true>;
+    mobileImage: Attribute.Media;
   };
 }
 

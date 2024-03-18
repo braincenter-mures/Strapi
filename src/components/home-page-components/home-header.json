@@ -2,7 +2,8 @@
   "collectionName": "components_home_page_components_home_headers",
   "info": {
     "displayName": "HomeHeader",
-    "icon": "alien"
+    "icon": "alien",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -21,6 +22,13 @@
       "type": "component",
       "repeatable": true,
       "component": "menu.menu-button"
+    },
+    "mobileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
