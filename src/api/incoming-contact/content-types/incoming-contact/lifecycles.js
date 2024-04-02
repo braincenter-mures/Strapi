@@ -13,7 +13,8 @@ module.exports = {
             })
             await strapi.plugins["email"].services.email.send(
               {
-                to: "braincenter.drbucur@gmail.com",
+                to: "info@braincenter.ro",
+                //to: "braincenter.drbucur@gmail.com",
                 //to: "demenyador@gmail.com",
                 from: "no-reply@braincenter.ro",
                 subject: "Contact Form",
