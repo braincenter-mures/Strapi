@@ -1978,6 +1978,77 @@ export interface ApiTermsAndConditionsPageTermsAndConditionsPage
   };
 }
 
+export interface ApiTestimonialTestimonial extends Schema.CollectionType {
+  collectionName: 'testimonials';
+  info: {
+    singularName: 'testimonial';
+    pluralName: 'testimonials';
+    displayName: 'Testimonial';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    image: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    name: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    review: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+        translate: {
+          translate: 'translate';
+        };
+      }>;
+    position: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+        translate: {
+          translate: 'translate';
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::testimonial.testimonial',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::testimonial.testimonial',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::testimonial.testimonial',
+      'oneToMany',
+      'api::testimonial.testimonial'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiTreatmentTreatment extends Schema.CollectionType {
   collectionName: 'treatments';
   info: {
@@ -2180,6 +2251,7 @@ declare module '@strapi/types' {
       'api::privacy-policy-page.privacy-policy-page': ApiPrivacyPolicyPagePrivacyPolicyPage;
       'api::services-page.services-page': ApiServicesPageServicesPage;
       'api::terms-and-conditions-page.terms-and-conditions-page': ApiTermsAndConditionsPageTermsAndConditionsPage;
+      'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::treatment.treatment': ApiTreatmentTreatment;
       'api::treatment-page.treatment-page': ApiTreatmentPageTreatmentPage;
     }
