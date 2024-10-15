@@ -1348,18 +1348,25 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
         'home-page-components.home-choose-us-section',
         'page-components.home-packages-section',
         'page-components.nf-technology-section',
-        'page-components.contact-section'
+        'page-components.contact-section',
+        'about-page-components.review'
       ]
     > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
+        translate: {
+          translate: 'translate';
+        };
       }>;
     seo: Attribute.Component<'shared.seo'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
+        };
+        translate: {
+          translate: 'translate';
         };
       }>;
     createdAt: Attribute.DateTime;
