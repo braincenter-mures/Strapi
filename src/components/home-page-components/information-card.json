@@ -14,9 +14,6 @@
       "type": "string",
       "required": true
     },
-    "content": {
-      "type": "text"
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -29,6 +26,14 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page-components.feature-line"
+    },
+    "content": {
+      "type": "richtext"
     }
   }
 }

@@ -107,11 +107,12 @@ export interface HomePageComponentsInformationCard extends Schema.Component {
   attributes: {
     overLineTitle: Attribute.String;
     title: Attribute.String & Attribute.Required;
-    content: Attribute.Text;
     image: Attribute.Media & Attribute.Required;
     imageRight: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<true>;
+    features: Attribute.Component<'page-components.feature-line', true>;
+    content: Attribute.RichText;
   };
 }
 
