@@ -1349,7 +1349,8 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
         'page-components.home-packages-section',
         'page-components.nf-technology-section',
         'page-components.contact-section',
-        'about-page-components.review'
+        'about-page-components.review',
+        'home-page-components.information-card'
       ]
     > &
       Attribute.SetPluginOptions<{

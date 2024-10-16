@@ -97,6 +97,24 @@ export interface HomePageComponentsHomeVmvSection extends Schema.Component {
   };
 }
 
+export interface HomePageComponentsInformationCard extends Schema.Component {
+  collectionName: 'components_home_page_components_information_cards';
+  info: {
+    displayName: 'InformationCard';
+    icon: 'information';
+    description: '';
+  };
+  attributes: {
+    overLineTitle: Attribute.String;
+    title: Attribute.String & Attribute.Required;
+    content: Attribute.Text;
+    image: Attribute.Media & Attribute.Required;
+    imageRight: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<true>;
+  };
+}
+
 export interface MenuMenuButton extends Schema.Component {
   collectionName: 'components_menu_menu_buttons';
   info: {
@@ -401,6 +419,7 @@ declare module '@strapi/types' {
       'home-page-components.home-choose-us-section': HomePageComponentsHomeChooseUsSection;
       'home-page-components.home-header': HomePageComponentsHomeHeader;
       'home-page-components.home-vmv-section': HomePageComponentsHomeVmvSection;
+      'home-page-components.information-card': HomePageComponentsInformationCard;
       'menu.menu-button': MenuMenuButton;
       'menu.menu-link': MenuMenuLink;
       'page-components.accordion-card': PageComponentsAccordionCard;
